@@ -9,4 +9,7 @@ func main(){
     for _,m :=range str{
 		fmt.Println(m)
 	}
+	for ix :=0; ix < len(s2); ix++ {
+        fmt.Printf("%c\n", s2[ix])
+    }
 }

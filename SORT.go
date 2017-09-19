@@ -40,6 +40,8 @@ func SortOdd(n int){
 		fmt.Println()
 	}
 }
+
+
 func GS1(a int ,b int,c int)(d int){
 	 m:=4 *c *(a-1)-(2*b-2)*(2*b-2)+1
 	 if a==b {
@@ -47,6 +49,8 @@ func GS1(a int ,b int,c int)(d int){
 	 }
 	 return GS1(a,b-1,c)+1
 }
+
+
 func GS2(a int, b int,c int)(d int){
 	if a+b ==c+2{
 		m:=GS3(a,b-1,c)-1
@@ -54,6 +58,8 @@ func GS2(a int, b int,c int)(d int){
 	}
 	return GS2(a,b-1,c)-1
 }
+
+
 func GS3(a int,b int,c int)(d int){
 	if a==b+1{
 		m:=GS1(a,b+1,c)-1
@@ -61,6 +67,9 @@ func GS3(a int,b int,c int)(d int){
 	}
 	return GS3(a-1,b,c)-1
 }
+
+
+
 func GS4(a int,b int,c int)(d int){
 	if a==b-1{
 		m:=GS2(a+1,b,c)-1
@@ -68,6 +77,7 @@ func GS4(a int,b int,c int)(d int){
 	}
 	return GS4(a+1,b,c)-1
 }
+
 
 func GS5(a int,b int,c int)(d int){
 	m:=c*c
@@ -82,7 +92,7 @@ func GS6(a int,b int,c int)(d int){
 }
 
 func main(){
-	n:=8
+	n:=5
 	if n%2==0 {
 		SortEven(n)
 	}
